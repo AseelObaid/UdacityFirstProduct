@@ -1,0 +1,34 @@
+.details {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr auto auto ;
+    column-gap: 20px;
+    row-gap: 40px;
+    margin: 40px;
+}
+
+.details img {
+    width: 100%;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #2c3e50;
+}
+
+
+@media (max-width: 800px) {
+    .details {
+        grid-template-columns: 1fr; 
+    }
+
+    .item-info {
+        margin: 20px; 
+    }
+}
+figcaption{
+    color: #2c3e50;
+    font-size: 15px; 
+}

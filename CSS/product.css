@@ -1,0 +1,56 @@
+.main-header {
+    color: #2c3e50;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 15px;
+}
+.main-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 50px;
+}
+
+p{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid #34495e;
+    text-decoration: none;
+    color: #34495e;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #d0e6ff;
+}
+.desc{
+    margin: 10px;
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.VCQuotes{
+    color: #1c2c3d;
+}
+.manufacturer-info{
+    color:  #1c2c3d;
+    font-size: 15px;
+}
+.Social-icons a{
+    font-size: 20px;
+    color: #34495e;
+    padding: 6px;
+}
+
+.Social-icons a:hover{
+    font-size: 22px;
+    color: #092038;
+
+}
+

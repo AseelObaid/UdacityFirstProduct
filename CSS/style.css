@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f4f6;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    background-color: #2c3e50;
+}
+.main-div h3{
+    text-align: center;
+    color: #34495e;
+}
+.nav1 img {
+    width: 100px;
+    height: 70px;
+}
+
+.nav1 ul {
+    display: flex;
+    margin-right: 20px;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav1 ul a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ecf0f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.item {
+    padding: 20px;
+    transition-duration: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    background-color: #c3c9bd;
+}
+
+.item h2 {
+    color: #34495e;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.item p {
+    font-size: 15px;
+    color: #7f8c8d;
+    margin: 20px;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #2c3e50;
+    padding: 20px;
+    color: #ecf0f1;
+}
+
+.Social-links a {
+    list-style: none;
+    padding: 10px;
+    color: #ecf0f1;
+    transition: color 0.3s ease;
+}
+
+.Social-links a:hover {
+    color: #3498db;
+}
+
+.btnmargin {
+    margin: 40px;
+    
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid #34495e;
+    text-decoration: none;
+    color: #34495e;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    display: inline-block; 
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color:#fca110;
+}
+
+@media (max-width: 1200px) {
+    section.items {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 800px) {
+    section.items {
+        grid-template-columns: 1fr; 
+    }
+
+    .nav1 ul {
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .nav1 {
+        flex-direction: column; 
+    }
+
+    .main-header {
+        font-size: 30px; 
+    }
+
+    .desc {
+        font-size: 14px; /
+    }
+
+    h2 {
+        font-size: 24px; 
+    }
+
+    h3 {
+        font-size: 20px; 
+        margin-top: 20px; 
+    }
+
+    .btn {
+      
+        padding: 15px; 
+        font-size: 18px;
+    }
+}
